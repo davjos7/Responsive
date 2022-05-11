@@ -1,0 +1,98 @@
+
+.boton{
+	background: blue;
+	color: red;
+}
+.nombre {
+	color: blue;
+	font-size: 40px;
+
+}	
+
+.caja1, .caja2{
+	width: 45%;
+	float: left;
+	border: 2px solid red;
+	height: 400px;
+
+}
+
+.caja1{
+	background: blue;
+}
+.caja2{
+	background: orange;
+}
+
+@media (max-width: 1000px ){
+	.boton{
+		background: yellow;
+		color: blue;
+	}
+}
+
+@media (max-width: 500px ){
+	.boton{
+		background: orange;		
+	}
+	.caja1,.caja2{
+		width: 100%;
+	}
+	.caja3,.caja4,.caja5{
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 700px ) and (min-width: 500px){
+	.boton{
+		background: black;		
+	}
+}	
+
+@media (max-width: 1000px ){
+	.nombre{
+		color: green;		
+	}
+}
+
+@media (max-width: 800px ) and (min-width: 500px){
+	.nombre{
+		color: orange;
+	}
+}
+
+@media (max-width: 500px ){
+	.nombre{
+		color: red;
+		font-size: 20px;		
+	}
+}
+
+@media print{
+	.nombre{
+		font-size: 80px;
+	}
+	.boton{
+		display: none;
+	}
+}
+
+.caja3,.caja4,.caja5{
+	width: 30%;
+	border: 2px solid blue;
+	height: 300px;
+	float: left;
+
+
+}
+
+.caja3{
+	background: black;
+}
+.caja4{
+	background: red;
+}
+.caja5{
+	background: green;
+}
